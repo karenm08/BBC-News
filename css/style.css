@@ -1,0 +1,201 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar{
+  background: #bb1919;
+  height: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+  .top-bar a{
+    color: white;
+    text-decoration: none;
+    font-weight:600 ;
+  }
+
+
+
+
+
+
+
+/*============= NAVIGATION =============*/
+
+.navbar{
+  font-weight:600 ;
+}
+
+
+/*============= CAROUSEL =============*/
+
+
+/*---Change Carousel Transition Speed --*/
+
+
+/*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 10%;
+  color:#F8F8FF;
+  transform:translateX(-35%);
+  text-align: left;
+}
+
+div.us {
+  margin: 20px;
+  overflow :hidden;
+
+  text-align: left;
+  line-height: 1.6em;
+}
+
+div.us:before {
+  display: block;
+  float: right;
+  margin-top: 2.5rem; /* half the line-height */
+  border-top: 2px solid silver;
+  width: 85%;
+  content: "";
+}
+
+div.covid {
+  margin: 20px;
+  overflow :hidden;
+
+  text-align: left;
+  line-height: 1.6em;
+}
+
+div.covid:before {
+  display: block;
+  float: right;
+  margin-top:2rem; /* half the line-height */
+  border-top: 2px solid silver;
+  width: 85%;
+  content: "";
+}
+
+
+.container a{
+  color: black;
+}
+ 
+ .container h5{
+   font-weight: bolder;
+ } 
+ 
+footer{
+
+  padding:1 rem 2rem 3rem;
+}
+
+footer, .socket a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.social{
+  list-style-type: none;
+  display: flex;
+
+  margin:0 auto;
+}
+
+ul.social li{
+  margin:0 auto       /*to space out the icon*/
+}
+
+
+footer .social{
+  font-size: 2rem;
+
+}
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+
+
+/*-- Emoji Navbar --*/
+
+
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
